@@ -2,17 +2,23 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-html    {
-    background-color: black;
-    padding: 20px 0;
+html, body    {
+    
+    background-image: url("/images/blue_back.jpg");
+    background-color: #660816;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-shadow: 0.5px 0.5px 
 }
 
 h1, h2, h3, h4, p  {
     text-align: center;
-    color: #660816;
+    /*color: #660816;*/
     font-size: 250%;
-}
-
+    font-weight: bold;
+    text-shadow: 0.5px 0.5px;
 }
 
 h2, h3  {
@@ -42,11 +48,11 @@ picture {
 
 img {
     text-align: center;
-    display: flex;
     border-radius: 50%;
     margin: auto;
     border: rgba(48, 40, 40, 0.808);
     padding: 20px 0 20px 0;
+    size: relative;
 }
 
 .colleges  {
@@ -66,7 +72,8 @@ a {
 
 a:hover {
     /*color: #205f6d;*/
-    color: #660816;
+    /*color: #660816;*/
+    color: #add8e6;
     transition: .05s;
     transition-timing-function: linear;
     text-decoration: none;
@@ -91,18 +98,12 @@ a:hover img     {
     100% {transform: rotate(30deg);}
 }
 
-body    {
-    background-image: url("/images/blue_back.jpg");
-    background-color: #660816;
-    padding: 10px;
-
-}
-
 .navbar     {   
     background-color: black;
     padding: 25px;
+    background-size: cover;
+    position: relative;
     display: flex;
-    justify-content: space-around;
 }
 
 .footbar  {
@@ -116,15 +117,16 @@ header  {
     text-align: center;
 }
 
-.icons  {
-    display: flex;
-    justify-content: space-around;
-}
-
 .container {
     background-image: url("/images/blue_back.jpg");
     background-color: #123dcc;
     background-size: cover;
     position: relative;
+    display: flex;
+    justify-content: space-around;
 }
 
+/*button {
+    background-color: #41afd6;
+    opacity: 0.6;
+}*/
