@@ -112,7 +112,7 @@ a:hover img     {
     text-align: center;
 }
 
-header  {
+.header  {
     color: rgba(231, 214, 214, 0.849);
     text-align: center;
 }
@@ -125,6 +125,10 @@ header  {
     display: flex;
     justify-content: space-around;
 }
+
+
+
+
 
 /*button {
     background-color: #41afd6;

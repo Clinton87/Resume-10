@@ -11,7 +11,7 @@
 </head>
 <body>
         <!--Start of header-->
-    <div>
+    <div class="header">
         <header>
             <h4>Resume of...</h4>
             <h1>Clinton Koordom</h1>
@@ -32,16 +32,70 @@
             <img src="images/colour_crop1.jpg" alt="clinton standing there" width="420" height="380">
         </picture>
 
-        <h2>Contact Details</h2>
+        <h2>Contact Me</h2>
+        <!--Start Of Form-->
             <div>
-                <p>Please feel free to contact me via Email, LinkedIn or Instagram. You can do so by clicking the appropriate image below:</p>
+                <p>Please feel free to send me a short message by filling in the short form below.</p>
+                <form method="post">
+                    <div>
+                        <label for="name">Name:</label>
+                            <input type="text-only" required>
+                    </div>
+                    <div>
+                        <label for="address">Address:</label>
+                            <input type="text" optional>
+                    </div>
+                    <div>
+                        <label for="country">Country:</label>
+                            <select id="country" name="country">
+                                <option value="South Africa">South Africa</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="Russia">Russia</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Korea">Korea</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="Namibia">Namibia</option>
+                            </select>
+                    </div>
+                    <div>
+                        <label for="zip_code">ZIP Code:</label>
+                            <input type="numbers" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                            <input type="email" required>
+                    </div>
+                    <div>
+                        <label for="sex">Sex:</label>
+                            <input type="radio" id="male" name="gender">
+                                <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender">
+                                <label for="female">Female</label>
+                    <div>
+                        <label for="language">Language:</label>
+                            <input type="checkbox" id="english">
+                                <label for="english">English</label>
+                            <input type="checkbox" id="non-english">
+                                <label for="afrikaans">Afrikaans</label>
+                            <input type="checkbox" id="other=language">
+                                <label for="other-language">Other Language</label>
+                    </div>
+                    <div>
+                        <label for="message">Your Message :</label>
+                            <input type="text-box">
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit" id="submit">
+                    </div>
+                </form>
+                <!--End Of Form-->
+                <p>Alternatively, contact me via Email, LinkedIn or Instagram. You can do so by clicking the appropriate image below:</p>                    
                     <div class="container col-md-12">
                         <a href="mailto:clintonkoordom@gmail.com/" target="_blank"><img src="images/gmail_logo.png" alt="gmail_logo" height="105px"></a>
                         <a href="https://www.linkedin.com/in/clinton-k-70034940/" target="_blank"><img src="images/linkedin_logo.png" alt="linkedin_logo" height="105px"></a>
                         <a href="https://www.instagram.com/mf_clinton87/" target="_blank"><img src="images/insta_logo.jpg" alt="instagram logo" height="105px"></a>
-                    </div>
+                    </div>              
             </div>
-    </div>
         <footer>
         <div>
             <nav class="footbar">
