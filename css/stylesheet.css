@@ -69,6 +69,7 @@ a:hover {
     color: #660816;
     transition: .05s;
     transition-timing-function: linear;
+    text-decoration: none;
 }
 
 a:hover img     {
@@ -91,6 +92,7 @@ a:hover img     {
 }
 
 body    {
+    background-image: url("/images/blue_back.jpg");
     background-color: #660816;
     padding: 10px;
 
@@ -117,19 +119,12 @@ header  {
 .icons  {
     display: flex;
     justify-content: space-around;
-
 }
 
-.woody {
+.container {
     background-image: url("/images/blue_back.jpg");
     background-color: #123dcc;
     background-size: cover;
     position: relative;
-    display: grid;
 }
 
-.I_am   {
-    color: white;
-    font-size: 120%;
-    text-shadow: 3px 3px black;
-}
