@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <!--stylesheet linked-->
+    <!--stylesheets linked, including Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
-        <!--Start of header-->
+    <!--Start of header-->
     <div class="header">
         <header>
             <h4>Resume of...</h4>
@@ -38,7 +38,7 @@
         <!--Start Of Form-->
             <div>
                 <p>Please feel free to send me a short message by filling in the short form below.</p>
-                <form method="post">
+                <form class="form-group" method="POST">
                     <div>
                         <label for="name">Name:</label>
                             <input type="text-only" required>
@@ -80,14 +80,14 @@
                             <input type="checkbox" id="non-english">
                                 <label for="afrikaans">Afrikaans</label>
                             <input type="checkbox" id="other=language">
-                                <label for="other-language">Other Language</label>
+                                <label for="other">Other</label>
                     </div>
                     <div>
-                        <label for="message">Your Message :</label>
-                            <input type="text-box">
+                        <label for="message">Your Message:</label>
+                            <textarea></textarea>
                     </div>
                     <div>
-                        <input type="submit" value="Submit" id="submit">
+                        <button type="button" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
                 <!--End Of Form-->

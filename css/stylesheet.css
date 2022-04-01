@@ -1,9 +1,10 @@
+/*CSS to be reorganised so that there's better flow. Leave as is for now until more experience is gained.*/
+
 *   {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 html, body    {
-    
     background-image: url("/images/blue_back.jpg");
     background-color: #660816;
     background-repeat: no-repeat;
@@ -139,6 +140,17 @@ a:hover img     {
 .grid {
     display: grid;
 
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    padding: 0;
+    width: 100px;
+    text-align: left;
 }
 
 /*button {
