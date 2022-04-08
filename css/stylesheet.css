@@ -143,17 +143,18 @@ a:hover img     {
 }
 
 .form-group {
-    margin-bottom: 10px;
+    display: inline-block;
+    width: 500px;
+    text-align: left;
+    margin: 25px 25px;
 }
 
 label {
     display: inline-block;
-    padding: 0;
     width: 100px;
     text-align: left;
 }
 
-/*button {
-    background-color: #41afd6;
-    opacity: 0.6;
-}*/
+.btn btn-primary {
+    text-align: right;
+}
