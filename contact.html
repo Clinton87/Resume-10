@@ -6,102 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <!--stylesheets linked, including Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+
+
+
+
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <body>
     <!--Start of header-->
-    <div class="header">
-        <header>
-            <h4>Resume of...</h4>
-            <h1>Clinton Koordom</h1>
-            <div class="jumbotron">
-                <p>Hello and welcome to my web page. I am currently studying Intro to Web with CodeSpace Academy.</p>
+    <div>
+        <h4>Resume of...</h4>
+        <h1>Clinton Koordom</h1>
+    </div>
+    <navbar>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="/images/BnW_check_clinton_garden.ico"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="education.html">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </header>
-        <!--Nav Bar-->
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="education.html">Education</a>
-            <a href="experience.html">Experience</a>
-            <a href="skills.html">Skills</a>
-            <a href="contact.html">Contact</a>
         </nav>
-
+    </navbar>
+    <div>
         <picture>
             <source media="(max-width: 650px)" srcset="images/colour_crop2.jpg" width="420" height="380">
             <source media="(max-width: 1000px)" srcset="images/colour_crop.jpg" width="550" height="380">
             <img src="images/colour_crop1.jpg" alt="clinton standing there" width="420" height="380">
         </picture>
-
+    </div>
+    <div>
         <h2>Contact Me</h2>
+        <p>Please feel free to send me a message by filling in the short form below.</p>
+
         <!--Start Of Form-->
-            <div>
-                <p>Please feel free to send me a message by filling in the short form below.</p>
-                <form class="form-group" method="POST">
-                    <div>
-                        <label for="name">Name:</label>
-                            <input type="text-only" required>
-                    </div>
-                    <div>
-                        <label for="address">Address:</label>
-                            <input type="text" optional>
-                    </div>
-                    <div>
-                        <label for="country">Country:</label>
-                            <select id="country" name="country">
-                                <option value="South Africa">South Africa</option>
-                                <option value="Brazil">Brazil</option>
-                                <option value="Russia">Russia</option>
-                                <option value="Ireland">Ireland</option>
-                                <option value="Korea">Korea</option>
-                                <option value="Nigeria">Nigeria</option>
-                                <option value="Namibia">Namibia</option>
-                            </select>
-                    </div>
-                    <div>
-                        <label for="zip_code">ZIP Code:</label>
-                            <input type="numbers" required>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                            <input type="email" required>
-                    </div>
-                    <div>
-                        <label for="sex">Sex:</label>
-                            <input type="radio" id="Male" name="gender">
+        <div class="form">
+            <form class="form-group" method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                        <input type="text-only" required>
+                </div>
+                <div>
+                    <label for="address">Address:</label>
+                        <input type="text" optional>
+                </div>
+                <div>
+                    <label for="country">Country:</label>
+                        <select id="country" name="country">
+                            <option value="South Africa">South Africa</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Korea">Korea</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Namibia">Namibia</option>
+                        </select>
+                </div>
+                <div>
+                    <label for="zip_code">ZIP Code:</label>
+                        <input type="numbers" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                        <input type="email" required>
+                </div>
+                <div>
+                    <label for="sex">Sex:</label>
+                        <input type="radio" id="Male" name="gender">
                             <label for="male">Male</label>
                             <input type="radio" id="Female" name="gender">
                             <label for="female">Female</label>
-                    <div>
-                        <label for="language">Language:</label>
-                            <input type="checkbox" id="english">
-                        <label for="english">English</label>
-                            <input type="checkbox" id="non-english">
-                        <label for="afrikaans">Afrikaans</label>
-                            <input type="checkbox" id="other=language">
-                        <label for="other">Other</label>
-                    </div>
-                    <div>
-                        <label for="message">Your Message:</label>
-                            <textarea placeholder="Type Here..."></textarea>
-                    </div>
-                    <div>
-                        <button type="button" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
-            </div>
-            <!--End Of Form-->
-            <!--Start Of Contact Details Section-->
-            <div>
-                <p>Alternatively, contact me via Email, LinkedIn or Instagram. You can do so by clicking the appropriate image below:</p>                    
-                    <div class="container col-md-12">
-                        <a href="mailto:clintonkoordom@gmail.com/" target="_blank"><img src="images/gmail_logo.png" alt="gmail_logo" height="105px"></a>
-                        <a href="https://www.linkedin.com/in/clinton-k-70034940/" target="_blank"><img src="images/linkedin_logo.png" alt="linkedin_logo" height="105px"></a>
-                        <a href="https://www.instagram.com/mf_clinton87/" target="_blank"><img src="images/insta_logo.jpg" alt="instagram logo" height="105px"></a>
-                    </div>              
-            </div>
-        <footer>
+                </div>
+                <div>
+                    <label for="language">Language:</label>
+                        <input type="checkbox" id="english">
+                    <label for="english">English</label>
+                        <input type="checkbox" id="non-english">
+                    <label for="afrikaans">Afrikaans</label>
+                        <input type="checkbox" id="other=language">
+                    <label for="other">Other</label>
+                </div>
+                <div>
+                    <label for="message">Your Message:</label>
+                        <textarea placeholder="Type Here..."></textarea>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+        <!--End Of Form-->
+        <!--Start Of Contact Details Section-->
+        <div>
+            <p>Alternatively, contact me via Email, LinkedIn or Instagram. You can do so by clicking the appropriate image below:</p>
+            <div class="container col-md-12">
+                <a href="mailto:clintonkoordom@gmail.com/" target="_blank"><img src="images/gmail_logo.png" alt="gmail_logo" height="105px"></a>
+                <a href="https://www.linkedin.com/in/clinton-k-70034940/" target="_blank"><img src="images/linkedin_logo.png" alt="linkedin_logo" height="105px"></a>
+                <a href="https://www.instagram.com/mf_clinton87/" target="_blank"><img src="images/insta_logo.jpg" alt="instagram logo" height="105px"></a>
+            </div>              
+        </div>
+    </div>
+    <footer>
         <div>
             <nav class="footbar">
                 <a href="index.html">Home</a>
