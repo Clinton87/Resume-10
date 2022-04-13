@@ -154,3 +154,13 @@ input {
 aside {
     margin-top: 5%;
 }
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.ending {
+    padding-bottom: 25%;
+}
