@@ -179,6 +179,11 @@ footer {
     width: 500px;
 }
 
+.card:hover {
+    box-shadow: 5px 5px;
+    cursor: pointer;
+}
+
 .cards {
     display: flex;
     justify-content: center;
