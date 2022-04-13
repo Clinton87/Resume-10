@@ -103,7 +103,7 @@ a:hover img     {
 
 .navbar     {   
     background-color: black;
-    padding: 25px;
+    padding: 0;
     background-size: cover;
     position: relative;
     display: flex;
@@ -113,7 +113,7 @@ a:hover img     {
 }
 
 .footbar  {
-    padding: 30px;
+    padding: 15px;
     background-color: rgb(15, 14, 14);
     text-align: center;
 }
