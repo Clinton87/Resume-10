@@ -107,6 +107,9 @@ a:hover img     {
     background-size: cover;
     position: relative;
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .footbar  {
@@ -146,4 +149,8 @@ label {
 
 input {
     margin: 10px 0;
+}
+
+aside {
+    margin-top: 5%;
 }
