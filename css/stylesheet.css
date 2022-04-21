@@ -124,16 +124,23 @@ a:hover img     {
 }
 
 .container {
-    background-image: url("../images/blue_back.jpg");
-    background-color: #1263cc;
     background-size: cover;
     position: relative;
     display: flex;
     justify-content: space-around;
 }
 
+.container-fluid {
+    display: flex;
+    justify-content: center;
+}
 
-.form {
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
     display: inline-block;
     position: center; 
     width: 400px;
@@ -182,9 +189,4 @@ footer {
 .card:hover {
     box-shadow: 5px 5px;
     cursor: pointer;
-}
-
-.cards {
-    display: flex;
-    justify-content: center;
 }
