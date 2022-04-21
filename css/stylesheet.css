@@ -103,15 +103,18 @@ a:hover img     {
 
 .navbar     {   
     background-color: black;
-    padding: 25px;
+    padding: 0;
     background-size: cover;
     position: relative;
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .footbar  {
-    padding: 30px;
-    background-color: black;
+    padding: 15px;
+    background-color: rgb(15, 14, 14);
     text-align: center;
 }
 
@@ -121,29 +124,69 @@ a:hover img     {
 }
 
 .container {
-    background-image: url("/images/blue_back.jpg");
-    background-color: #123dcc;
     background-size: cover;
     position: relative;
     display: flex;
     justify-content: space-around;
 }
 
+.container-fluid {
+    display: flex;
+    justify-content: center;
+}
 
-.form {
-    display: inline-block;
-    position: center; 
-    width: 500px;
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
     text-align: left;
-    margin-left: 20px;
+    margin: 5px 0;
+    padding: 5px 0;
 }
 
 label {
     display: inline-block;
-    width: 100px;
+    width: 75px;
     text-align: top;
 }
 
 input {
     margin: 10px 0;
+}
+
+aside {
+    margin-top: 10%;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.ending {
+    padding-bottom: 28%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.card {
+    background-color: rgb(4, 36, 95, .4);
+    border-radius: 25px;
+    padding: 5px;
+    margin: 20px 20px;
+    width: 380px;
+}
+
+.card:hover {
+    box-shadow: 5px 5px;
+    cursor: pointer;
 }

@@ -25,10 +25,11 @@
     <navbar>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="/images/BnW_check_clinton_garden.ico"></a>
+                <a class="navbar-brand" href="index.html"><img src="images/BnW_check_clinton_garden.ico"> Resumé</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+            </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -51,83 +52,89 @@
             </div>
         </nav>
     </navbar>
-    <div>
+    <aside>
         <picture>
             <source media="(max-width: 650px)" srcset="images/colour_crop2.jpg" width="420" height="380">
             <source media="(max-width: 1000px)" srcset="images/colour_crop.jpg" width="550" height="380">
             <img src="images/colour_crop1.jpg" alt="clinton standing there" width="420" height="380">
         </picture>
-    </div>
+    </aside>
     <div>
         <h2>Contact Me</h2>
         <p>Please feel free to send me a message by filling in the short form below.</p>
-
-        <!--Start Of Form-->
-        <div class="form">
-            <form class="form-group" method="POST">
-                <div>
-                    <label for="name">Name:</label>
-                        <input type="text-only" required>
-                </div>
-                <div>
-                    <label for="address">Address:</label>
-                        <input type="text" optional>
-                </div>
-                <div>
-                    <label for="country">Country:</label>
-                        <select id="country" name="country">
-                            <option value="South Africa">South Africa</option>
-                            <option value="Brazil">Brazil</option>
-                            <option value="Russia">Russia</option>
-                            <option value="Ireland">Ireland</option>
-                            <option value="Korea">Korea</option>
-                            <option value="Nigeria">Nigeria</option>
-                            <option value="Namibia">Namibia</option>
-                        </select>
-                </div>
-                <div>
-                    <label for="zip_code">ZIP Code:</label>
-                        <input type="numbers" required>
-                </div>
-                <div>
-                    <label for="email">Email:</label>
-                        <input type="email" required>
-                </div>
-                <div>
-                    <label for="sex">Sex:</label>
-                        <input type="radio" id="Male" name="gender">
-                            <label for="male">Male</label>
-                            <input type="radio" id="Female" name="gender">
-                            <label for="female">Female</label>
-                </div>
-                <div>
-                    <label for="language">Language:</label>
-                        <input type="checkbox" id="english">
-                    <label for="english">English</label>
-                        <input type="checkbox" id="non-english">
-                    <label for="afrikaans">Afrikaans</label>
-                        <input type="checkbox" id="other=language">
-                    <label for="other">Other</label>
-                </div>
-                <div>
-                    <label for="message">Your Message:</label>
-                        <textarea placeholder="Type Here..."></textarea>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-primary">Submit</button>
-                </div>
-            </form>
-        </div>
-        <!--End Of Form-->
         <!--Start Of Contact Details Section-->
         <div>
-            <p>Alternatively, contact me via Email, LinkedIn or Instagram. You can do so by clicking the appropriate image below:</p>
-            <div class="container col-md-12">
-                <a href="mailto:clintonkoordom@gmail.com/" target="_blank"><img src="images/gmail_logo.png" alt="gmail_logo" height="105px"></a>
-                <a href="https://www.linkedin.com/in/clinton-k-70034940/" target="_blank"><img src="images/linkedin_logo.png" alt="linkedin_logo" height="105px"></a>
-                <a href="https://www.instagram.com/mf_clinton87/" target="_blank"><img src="images/insta_logo.jpg" alt="instagram logo" height="105px"></a>
+            <p>Alternatively, contact me via Email, LinkedIn or Instagram. You can do so by selection the appropriate option below:</p>
+            <div class="links">
+                <a href="mailto:clintonkoordom@gmail.com/" target="_blank"><img src="images/gmail_logo.png" alt="gmail_logo" height="115px"></a>
+                <a href="https://www.linkedin.com/in/clinton-k-70034940/" target="_blank"><img src="images/linkedin_logo.png" alt="linkedin_logo" height="115px"></a>
+                <a href="https://www.instagram.com/mf_clinton87/" target="_blank"><img src="images/insta_logo.jpg" alt="instagram logo" height="115px"></a>
             </div>              
         </div>
+        <!--Start Of Form-->
+        <div class="ending">
+            <div class="row">
+                <h3>Contact Form</h3>
+                <form class="form-group" method="POST">
+                    <div class="col-md-12 card">
+                        <div>
+                            <div>
+                                <label for="name">Name:</label>
+                                <input type="text-only" required>
+                            </div>
+                            <div>
+                                <label for="address">Address:</label>
+                                <input type="text" optional>
+                            </div>
+                            <div>
+                                <label for="country">Country:</label>
+                                <select id="country" name="country">
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="Russia">Russia</option>
+                                    <option value="Ireland">Ireland</option>
+                                    <option value="Korea">Korea</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="Namibia">Namibia</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="zip_code">Postal Code:</label>
+                                <input type="numbers" required>
+                            </div>
+                            <div>
+                                <label for="email">Email:</label>
+                                <input type="email" required>
+                            </div>
+                            <div>
+                                <label for="sex">Sex:</label>
+                                <input type="radio" id="Male" name="gender">
+                                <label for="male">Male</label>
+                                <input type="radio" id="Female" name="gender">  
+                                <label for="female">Female</label>
+                            </div>
+                            <div>
+                                <label for="language">Language:</label>
+                                <input type="checkbox" id="english">
+                                <label for="english">English</label>
+                                <input type="checkbox" id="non-english">
+                                <label for="afrikaans">Afrikaans</label>
+                                <input type="checkbox" id="other=language">
+                                <label for="other">Other</label>
+                            </div>
+                            <div>
+                                <label for="message">Your Message:</label>
+                                <textarea placeholder="Type Here..."></textarea>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--End Of Form-->
     </div>
     <footer>
         <div>
